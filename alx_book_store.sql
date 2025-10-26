@@ -1,3 +1,5 @@
+DROP DATABASE IF EXISTS `alx_book_store`;
+
 CREATE DATABASE IF NOT EXISTS `alx_book_store`
 CHARACTER SET utf8mb4
 COLLATE utf8mb4_unicode_ci;
@@ -5,11 +7,13 @@ COLLATE utf8mb4_unicode_ci;
 
 USE `alx_book_store`;
 
+
 CREATE TABLE `Authors` (
   `author_id` INT NOT NULL AUTO_INCREMENT,
   `author_name` VARCHAR(215) NOT NULL,
   PRIMARY KEY (`author_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
 
 
 CREATE TABLE `Books` (
@@ -71,4 +75,3 @@ CREATE TABLE `Order_Details` (
     ON UPDATE CASCADE
     ON DELETE RESTRICT
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
