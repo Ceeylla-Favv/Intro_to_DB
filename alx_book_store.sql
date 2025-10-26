@@ -1,6 +1,3 @@
-DROP DATABASE IF EXISTS `alx_book_store`;
-
-
 CREATE DATABASE IF NOT EXISTS `alx_book_store`
 CHARACTER SET utf8mb4
 COLLATE utf8mb4_unicode_ci;
